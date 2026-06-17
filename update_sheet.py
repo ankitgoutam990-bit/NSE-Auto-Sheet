@@ -17,7 +17,7 @@ client = gspread.authorize(creds)
 
 # अपनी गूगल शीट की ID यहाँ डालें (URL के बीच का हिस्सा)
 spreadsheet_id = "1Tzqzgy6G4Gd2jWHZD8hghT6gQhDA31IF9rm35GftdjU" 
-worksheet = client.open_by_key(spreadsheet_id).worksheet("Top 250 Stocks")
+worksheet = client.open_by_key(spreadsheet_id).worksheet(" Top 250 Stocks")
 
 # 2. NSE UDiFF Data Fetcher
 def fetch_bhavcopy_for_date(date_obj):
