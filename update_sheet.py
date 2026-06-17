@@ -16,7 +16,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
 client = gspread.authorize(creds)
 
 # अपनी गूगल शीट की ID यहाँ डालें (URL के बीच का हिस्सा)
-spreadsheet_id = "1W8yqMrvKSjri5QQ6Ifj4r_uOy-_a0Gz3RLFSx24aV-8" 
+spreadsheet_id = "1Tzqzgy6G4Gd2jWHZD8hghT6gQhDA31IF9rm35GftdjU" 
 worksheet = client.open_by_key(spreadsheet_id).worksheet("Top 250 Stocks")
 
 # 2. NSE UDiFF Data Fetcher
